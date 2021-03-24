@@ -1,0 +1,375 @@
+html {
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #0F0A15;
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding:0;
+
+  .section1 {
+    background-image: url("img/anhnennn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .layout-cover{
+      background-color:rgba(15, 10, 21, 0.9);
+    }
+
+    .header-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 30px 0;
+      a {
+        margin-right: 30px;
+        color: white;
+        text-decoration: none;
+        &:hover{
+          color: #FF9F1F;
+        }
+      }
+      .mobile-menu-btn {
+        color: white;
+        display: none;
+      }
+    }
+    .content1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 100px;
+      margin-top: 91px;
+      img {
+        width: 481px;
+        margin-right: 100px;
+      }
+      .contactUs{
+        #part1 {
+          font-size: 58px;
+          color: #e58f00;
+          display: inline;
+        }
+        #part2 {
+          color: white;
+        }
+        button {
+          background-color: #FF9F1F;
+          padding: 16px 30px;
+          border: none;
+          border-radius: 7px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .section2 {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    img {
+      width: 100%;
+      margin-right: 32px;
+    }
+    .aboutUs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      font-size: 23px;
+      span {
+        font-size: 41px;
+      }
+    }
+  }
+  .section3 {
+    position: relative;
+    .foodQuality{
+      position: absolute;
+      color: white;
+      font-size: 24px;
+      top: 20%;
+      left: 10%;
+      span {
+        font-size: 54px;
+      }
+    }
+    .img-one{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .img-two{
+      position: absolute;
+      left: 0;
+      bottom: 4%;
+    }
+    .img-three{
+      position: absolute;
+      right: 0;
+      bottom:0;
+    }
+  }
+  .section4 {
+    text-align: center;
+    color: white;
+    margin-top: 75px;
+    h1 {
+      display: inline-block;
+      margin-bottom: 61px;
+      font-size: 47px;
+    }
+  }
+  .section5 {
+    margin-top: 72px;
+    background-image: url(img/anh5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 200px 0; 
+
+    .enjoyFood {
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      border: 10px solid #e58f00;
+      margin: auto;
+      padding: 30px;
+      background-color: rgba(30, 30, 36, 0.9);
+    }
+  }
+  .section6 {
+    margin-top: 75px;
+
+    img {
+      width: 60%;
+    }
+
+    h1 {
+      color: white;
+      margin-bottom: 61px;
+      font-size: 47px;
+      text-align: center;
+    }
+
+    .text {
+      margin-top: 10px;
+    }
+  }
+  .section7 {
+    position: relative;
+    margin-top: 147px;
+    background-image: url('img/anh77.png');
+    min-height: 360px;
+
+    img {
+      position: absolute;
+      top: -99px;
+      width: 36%;
+    }
+
+    .bestMeal {
+      position: absolute;
+      top: 30%;
+      right: 14%;
+      color: white;
+      span {
+        font-size: 55px;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+
+    img {
+      margin-bottom: 25px;
+    }
+    
+    .footer-link {
+      margin-bottom: 25px;
+      a {
+        text-decoration: none;
+        color: white;
+        margin-right: 30px;
+        &:hover {
+          color: yellow;
+        }
+      }
+    }
+
+    .icon-link {
+      img {
+        width: 22px;
+        margin-right: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:740px) and (max-width:1023px) {
+  .content1 img {
+    display: none;
+  }
+
+  .section3 {
+    position: relative;
+    .foodQuality{
+      top: 24% !important;
+      left: 5% !important;
+    }
+    .img-one{
+      width: 27%;
+    }
+    .img-two{
+      width: 35%;
+    }
+    .img-three{
+      width: 53%;
+    }
+  }
+
+  .section4 {
+    img {
+      width: 88%;
+    }
+  }
+
+  .section6 {
+    .col-lg-4 {
+      margin-bottom: 40px;
+    }
+  }
+
+  .section7 {
+    img {
+      display: none;
+    }
+    .bestMeal {
+      left: 10%;
+    }
+  }
+}
+
+@media screen and (max-width:739px){
+  .mobile-menu-btn {
+    position: relative;
+    width: 100%;
+    display: block !important;
+    .list-menu {
+      background-color: #595555;
+      width: 90%;
+      line-height: 30px;
+    }
+    .item {
+      padding-left: 12px;
+      &:hover {
+        background-color: #929090;
+      }
+    }
+  }
+  .list-menu {
+    position: absolute;
+    display: none;
+  }
+  .header-menu__left {
+    display: none;
+  }
+  .header-menu__right {
+    display: none;
+  }
+  .header-menu{
+    justify-content: space-between !important;
+    padding: 10px 20px !important;
+    img {
+      width: 18%;
+    }
+  } 
+  .content1 img {
+    display: none;
+  }
+  .contactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #part1 {
+      font-size: 40px !important;
+    }
+    #part2 {
+      display: none;
+    }
+    button {
+      margin-top: 30px;
+    }
+  }
+  .section3 {
+    position: relative;
+    .foodQuality{
+      top: 34% !important;
+      left: 5% !important;
+      span {
+        font-size: 29px !important;
+      }
+      p {
+        display: none;
+      }
+    }
+    .img-one{
+      width: 27%;
+    }
+    .img-two{
+      width: 35%;
+    }
+    .img-three{
+      width: 53%;
+    }
+  }
+  .section4 img {
+    width: 90%;
+  }
+  .section7 {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    img {
+      width: 37%;
+      margin-top: 20px;
+      position: static !important;
+    }
+    .bestMeal {
+      p {
+        text-align: center;
+      }
+      span {
+        font-size: 40px !important;
+        text-align: center;
+        display: block;
+      }
+      position: static !important;
+    }
+  }
+  .footer {
+    img {
+      width: 50%;
+    }
+    .footer-link {
+      display: flex;
+    flex-direction: column;
+    }
+  }
+}
