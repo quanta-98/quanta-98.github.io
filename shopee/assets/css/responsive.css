@@ -1,0 +1,123 @@
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+  :root {
+    --header-height: 68px;
+    --navbar-height: 0px;
+  }
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .header__cart-list {
+    position: fixed;
+    top: var(--header-height);
+    width: 100%;
+    right: 0;
+    padding: 0px 50px;
+  }
+  .header__cart-list::after{
+    display: none;
+  }
+  .header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+  }
+  .app__container {
+    margin-top: calc(var(--header-height) + 46px );
+  }
+  .header__sort-bar {
+    display: flex;
+  }
+  .app__content {
+    padding-top: 8px;
+  }
+  .mobile-category {
+    display: block;
+  }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+  .hide-on-tablet {
+    display: none;
+  }
+  .header__cart {
+    width: 80px;
+    text-align: right;
+  }
+}
+
+/* Mobile */
+@media (max-width:739px){
+
+  .hide-on-mobile {
+    display: none;
+  }
+  .header-with-search {
+    justify-content: space-between;
+  }
+  .header__logo,.header__cart {
+    width: unset;
+  }
+  .header__search {
+    position: fixed;
+    top:var(--header-height);
+    left: 0;
+    right: 0;
+    height: 46px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    padding: 0 8px;
+    animation:mobileSearchSideIn linear 0.3s;
+    display: none;
+  }
+
+  .header__search-history {
+    width: 100%;
+    position: fixed;
+    top: calc(var(--header-height) + 46px);
+    left: 0;
+    right: 0;
+  }
+  @keyframes mobileSearchSideIn {
+    from {
+      opacity: 0;
+      top: calc(var(--header-height)/2)
+    }
+    to {
+      opacity: 1;
+      top:var(--header-height);
+    }
+  }
+
+  .pagination-item__link {
+    --height : 28px;
+    font-size: 1.6rem;
+    min-width: 36px;
+  }
+  .pagination-item {
+    margin: 0;
+  }
+  .header__mobile-search {
+    display: block;
+  }
+  .header__logo-img {
+    width: 120px;
+  }
+  .footer__content {
+    padding: 0 16px;
+  }
+  .footer__heading {
+    text-align: center;
+  }
+  .footer-item__link,
+  .footer__download {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__download-apps {
+    flex: unset;
+  }
+}
