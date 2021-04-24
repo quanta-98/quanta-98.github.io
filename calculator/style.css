@@ -1,0 +1,29 @@
+body {
+  background-color: lightblue;
+}
+
+body .wrap-calculator {
+  margin: auto;
+  max-width: 400px;
+  background-color: white;
+}
+
+body .wrap-calculator .display {
+  height: 50px;
+  background-color: #edecec;
+}
+
+body .btn:hover {
+  background-color: gray;
+}
+
+body td {
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+body td:hover {
+  cursor: pointer;
+  background-color: #c9c4c4;
+}
+/*# sourceMappingURL=style.css.map */

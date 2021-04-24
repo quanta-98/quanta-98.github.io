@@ -1,0 +1,38 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Kiến thức cơ bản, cốt lõi dân IT cần học trước",
+      "description": "Kiến thức cơ bản dành cho dân IT, không phân biệt bạn theo Front-end, Back-end hay Devops"
+    },
+    {
+      "name": "Xây dựng web với NodeJS & ExpressJS",
+      "description": "Xây dựng web trong thực tế với NodeJS & ExpressJS với cách chia sẻ chi tiết, tận tâm, dễ hiểu và chất giọng giàu sức sống của người chia sẻ",
+      "id": 2
+    },
+    {
+      "name": "Xây dựng web APACHE",
+      "description": "Xây dựng web trong thực tế",
+      "id": 3
+    },
+    {
+      "name": "Xây dựng web Bán hàng",
+      "description": "Dễ hiểu và chất giọng giàu sức sống của người chia sẻ",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "avatar":"https://bit.ly/328Mwbz",
+      "name": "Anh2uan",
+      "time": "18 tháng 3 lúc 08:00"
+    },
+    {
+      "id": 2,
+      "avatar":"https://bit.ly/3d3Mpo4",
+      "name": "Chú Đoài Ngựa",
+      "time": "20 tháng 4 lúc 09:00"
+    }
+  ]
+}

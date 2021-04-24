@@ -1,0 +1,22 @@
+body {
+  background-color: lightblue;
+  .wrap-calculator {
+    margin: auto;
+    max-width: 400px;
+    background-color: white;
+    .display {
+      height: 50px;
+      background-color: #edecec;
+    }
+  }
+  .btn:hover {
+    background-color: gray;
+  }
+  td {
+    transition: .25s;
+  }
+  td:hover {
+    cursor: pointer;
+    background-color: rgb(201, 196, 196);
+  }
+}
