@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  &:hover {
+    color: black;
+  }
+}
+
+.contents {
+  background-color: #F0F2F5;
+  padding: 24px 16px;
+}
